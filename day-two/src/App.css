@@ -1,0 +1,416 @@
+/* Centering the body content */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- ToDo List Styles --- */
+
+/* Main container */
+.todolist-Container {
+  min-height: 50vh;
+  width: 50vw;
+  background: #ffffff;
+  padding: 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Title */
+.todolist-Container h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Input and Button Container */
+.todolist-Container form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Input field */
+.todolist-Container input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.todolist-Container input:focus {
+  border-color: #007bff;
+}
+
+/* Button styling */
+.todolistButton {
+  border: none;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.todolistButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.todolistButton:active {
+  transform: scale(0.95);
+}
+
+/* Todo list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+ul li {
+  background: #f8f9fa;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+ul li:hover {
+  background: #e2e6ea;
+}
+
+/* --- Profile Container --- */
+
+.profile-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-left: 5px solid #007bff;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.profile-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Title styling */
+.profile-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Input field container */
+.profile-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+/* Label styling */
+.input-label {
+  flex: 1;
+  font-size: 17px;
+  font-weight: 600;
+  color: #444;
+  text-align: left;
+}
+
+/* Input field styling */
+.input-field {
+  flex: 2;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8f8f8;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Profile Information section */
+.profile-info {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 2px dashed #007bff;
+  text-align: center;
+}
+
+.profile-info-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.profile-text {
+  font-size: 16px;
+  color: #444;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+/* --- Shopping List Styles --- */
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input styles */
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* List styles */
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List item styles */
+.list-item {
+  font-weight: 500;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Quantity styles */
+.quantity {
+  font-weight: bold;
+  color: #333;
+}
+
+/* --- Responsive Design --- */
+
+@media (max-width: 1024px) {
+  .todolist-Container {
+    width: 70vw;
+  }
+
+  .todolist-Container input {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .todolist-Container {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .todolist-Container h1 {
+    font-size: 1.5rem;
+  }
+
+  .todolist-Container input {
+    width: 100%;
+  }
+
+  .todolistButton {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .todolist-Container {
+    width: 95vw;
+    padding: 15px;
+  }
+
+  .todolist-Container h1 {
+    font-size: 1.3rem;
+  }
+
+  .todolist-Container input {
+    font-size: 0.9rem;
+  }
+
+  .todolistButton {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .profile-input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-label {
+    margin-bottom: 5px;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+}
+
+/* CopyInput */
+/* Main container */
+.copyInput {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.596) 0px 5px 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Input styling */
+.copyInput input {
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.808) 0px 0 5px;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 7px;
+  width: 70%;
+}
+
+/* Button styling */
+.copyInput button {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  padding: 8px 10px;
+  border-radius: 7px;
+  width: 90px;
+  cursor: pointer;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+
+.copyInput button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/* Heading styles */
+.copyInput h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 600;
+
+}
+
+/* Popup container */
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeInOut 2s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
