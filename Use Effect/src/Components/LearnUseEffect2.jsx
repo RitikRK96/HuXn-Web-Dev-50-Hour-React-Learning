@@ -1,28 +1,32 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
 const LearnUseEffect2 = () => {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
-    useEffect(()=>{
-        async function getData() {
-            const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-            const data = await response.json();
-            if (data && data.length) setData(data);
-        }
+  useEffect(() => {
+    async function getData() {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/posts"
+      );
+      const data = await response.json();
+      if (data && data.length) setData(data);
+    }
 
-        getData();
-    },[]);
+    getData();
+  }, []);
 
   return (
     <div>
-        <ul>
-            {data.map((todo)=>(
-                <li key={todo.id} >{todo.title}</li>,
-                <li key={todo.id} >{todo.body}</li>
-            ))}
-        </ul>
+      <ul>
+        {data.map((todo) => (
+          <section key={todo.id}>
+            <li>Title -- {todo.title}</li>
+            <li>Body -- {todo.body}</li>
+          </section>
+        ))}
+      </ul>
     </div>
-  )
-}
+  );
+};
 
 export default LearnUseEffect2;
