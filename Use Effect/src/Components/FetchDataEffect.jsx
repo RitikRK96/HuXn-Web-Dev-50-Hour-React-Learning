@@ -22,4 +22,4 @@ const FetchDataEffect = () => {
   )
 }
 
-export default FetchDataEffect
+export default FetchDataEffect;

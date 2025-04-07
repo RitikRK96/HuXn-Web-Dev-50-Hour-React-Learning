@@ -20,8 +20,8 @@ const LearnUseEffect2 = () => {
       <ul>
         {data.map((todo) => (
           <section key={todo.id}>
-            <li>Title -- {todo.title}</li>
-            <li>Body -- {todo.body}</li>
+            <li>Title :- {todo.title}</li>
+            <li>Body :- {todo.body}</li>
           </section>
         ))}
       </ul>
